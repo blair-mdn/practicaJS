@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda Online</h1>
+    </header>
+
+    <main>
+        <div class="product">
+            <h2>Producto 1</h2>
+            <p>Descripción del producto.</p>
+            <p>Precio: S/. 500.00</p>
+            <button onclick="addToCart('Producto 1', 50)">Añadir al Carrito</button>
+        </div>
+
+        <div class="product">
+            <h2>Producto 2</h2>
+            <p>Descripción del producto.</p>
+            <p>Precio: S/. 750.00</p>
+            <button onclick="addToCart('Producto 2', 75)">Añadir al Carrito</button>
+        </div>
+    </main>
+
+    <aside>
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: S/. <span id="total-price">0.00</span></p>
+        <button onclick="checkout()">Pagar</button>
+    </aside>
+
+    <script src="uno.js"></script>
+</body>
+</html>
